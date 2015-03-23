@@ -1,8 +1,8 @@
 function add(n){
-  var fn = function(x) {
-    return add(n + x);
+  var fn = function(x) { //fn is now a function object
+    return add(n + x); 
   };
-  fn.valueOf = function() {
+  fn.valueOf = function() { //fn function onject has a value to return when called on.
     return n;
   };
   return fn;
